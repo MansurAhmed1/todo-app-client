@@ -36,7 +36,7 @@ const Addtodo = () => {
     <div>
       <h3 className="py-2 fw-bold text-white">To Do List App </h3>
       <form className="w-full mx-auto" onSubmit={handleOnSubmit}  action="">
-        <input type="py-1" name="input" />
+        <input type="text" className="todoInput" name="input" />
         <button className="btn bg-dark  mx-2 text-white mb-1  border  mt-1 mt-lg-0 px-4" type="submit">
           Add todo
         </button>

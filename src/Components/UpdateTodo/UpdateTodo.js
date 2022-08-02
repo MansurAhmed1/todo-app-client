@@ -34,7 +34,7 @@ const UpdateTodo = ({ updatedData, setUpdate }) => {
   return (
     <div className="py-3">
       <form className="w-full mx-auto" onSubmit={handleUpdate} action="">
-        <input type="text py-1" name="input" />
+        <input type="text" className="todoInput" name="input" />
         <button className="btn  border  mt-1 mt-lg-0 bg-success mx-2 text-white mb-1 " type="submit">
           Update todo
         </button>
