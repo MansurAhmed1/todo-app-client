@@ -17,7 +17,7 @@ const Todo = ({ todo, index, updateData, setUpdate }) => {
   const handleDelete = (id) => {
     const procced = window.confirm("Are You sure Want to delete this todo?");
     if (procced) {
-      const url = `http://localhost:5000/deletetodo/${id}`;
+      const url = `https://hidden-anchorage-98570.herokuapp.com/deletetodo/${id}`;
       fetch(url, {
         method: "DELETE"
       })
@@ -29,25 +29,22 @@ const Todo = ({ todo, index, updateData, setUpdate }) => {
   };
   /////////////////////////delete todo////////////////////////
 
-
-
-//////////////////////////////taskdone///////////////////////
-const handleTodoDone=(id)=>{
-
-  const takDone = { taskDone:true };
-  const url = `http://localhost:5000/taskdone/${id}`;
-  fetch(url, {
-    method: "PUT",
-    headers: {
-      "content-type": "application/json"
-    },
-    body: JSON.stringify(takDone)
-  })
-    .then((res) => res.json())
-    .then((result) => {
-      console.log(result);
-    });
-}
+  //////////////////////////////taskdone///////////////////////
+  const handleTodoDone = (id) => {
+    const takDone = { taskDone: true };
+    const url = `https://hidden-anchorage-98570.herokuapp.com/taskdone/${id}`;
+    fetch(url, {
+      method: "PUT",
+      headers: {
+        "content-type": "application/json"
+      },
+      body: JSON.stringify(takDone)
+    })
+      .then((res) => res.json())
+      .then((result) => {
+        console.log(result);
+      });
+  };
 /////////////////////////////taskdone////////////////////////
 
 

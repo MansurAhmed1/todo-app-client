@@ -11,7 +11,7 @@ const UpdateTodo = ({ updatedData, setUpdate }) => {
   const handleUpdate = (e) => {
     e.preventDefault();
     const todos = { todo: e.target.input.value };
-    const url = `http://localhost:5000/updatetodo/${updatedData}`;
+    const url = `https://hidden-anchorage-98570.herokuapp.com/updatetodo/${updatedData}`;
     fetch(url, {
       method: "PUT",
       headers: {

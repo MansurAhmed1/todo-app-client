@@ -12,7 +12,7 @@ const Addtodo = () => {
     e.preventDefault();
     const toDo = e.target.input.value;
     const data = { toDo };
-    const url = "http://localhost:5000/todo";
+    const url = "https://hidden-anchorage-98570.herokuapp.com/todo";
     fetch(url, {
       method: "POST",
       headers: {

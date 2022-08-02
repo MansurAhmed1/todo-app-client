@@ -12,7 +12,7 @@ const ToDoList = () => {
 
 
   useEffect(() => {
-    fetch("http://localhost:5000/todos")
+    fetch("https://hidden-anchorage-98570.herokuapp.com/todos")
       .then((res) => res.json())
       .then((data) => setTodos(data));
   }, [todos]);
