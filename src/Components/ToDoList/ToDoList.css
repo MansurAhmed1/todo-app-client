@@ -1,0 +1,36 @@
+/** @format */
+
+.todoList {
+  width: 82%;
+  padding: 9px 0px;
+
+}
+.todo {
+  width: 84%;
+  text-align: left;
+}
+.numberOfTodo {
+  width: 4%;
+}
+.delete,
+.compelete,
+.update {
+  width: 4%;
+}
+
+@media only screen and (max-width: 800px) {
+    .todoList{
+        width: 95%;
+    }
+  .todo {
+    width: 68%;
+  }
+  .numberOfTodo {
+    width: 8%;
+  }
+  .delete,
+  .compelete,
+  .update {
+    width: 8%;
+  }
+}

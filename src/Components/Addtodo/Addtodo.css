@@ -1,0 +1,16 @@
+/** @format */
+
+input {
+  padding: 5px 0px;
+  width: 900px;
+  border: 2px solid green;
+}
+
+@media only screen and (max-width: 800px) {
+
+  input {
+    padding: 5px 0px;
+    width: 230px;
+    border: 2px solid green;
+  }
+}
