@@ -3,7 +3,7 @@
 input {
   padding: 5px 0px;
   width: 900px;
-  border: 2px solid green;
+  border: 2px solid black;
 }
 
 @media only screen and (max-width: 800px) {

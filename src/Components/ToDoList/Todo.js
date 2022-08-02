@@ -49,7 +49,7 @@ const Todo = ({ todo, index, updateData, setUpdate }) => {
 
 
   return (
-    <div className="bg-dark todoList mx-auto mt-2 d-flex flex-row ">
+    <div className="bg-dark text-white todoList mx-auto mt-2 d-flex flex-row ">
       <div className="numberOfTodo">{index + 1}.</div>
       <div className="todo">{toDo} </div>
       <div
